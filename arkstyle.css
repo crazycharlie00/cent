@@ -1,0 +1,543 @@
+
+.animat-1 {
+    animation: animat-1 2s 250ms infinite alternate;
+}
+@keyframes animat-1 {
+    from {
+        letter-spacing: 20px;
+        opacity: 0;
+        filter: blur(5px);
+    }
+    to {
+        letter-spacing: 0;
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+.animat-2 {
+    animation: animat-2 2s 250ms infinite alternate;
+}
+@keyframes animat-2 {
+    from {
+        opacity: 0;
+        filter: blur(13px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+.animat-3 {
+    animation: animat-3 2s 250ms infinite alternate;
+}
+@keyframes animat-3 {
+    from {
+        transform: translateY(150px);
+        letter-spacing: 20px;
+        opacity: 0;
+        filter: blur(5px);
+    }
+    to {
+        letter-spacing: 0;
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+
+.animat-4 {
+    animation: animat-4 2s 250ms infinite alternate;
+}
+@keyframes animat-4 {
+    from {
+        transform: translateY(-150px);
+        letter-spacing: 20px;
+        opacity: 0;
+        filter: blur(5px);
+    }
+    to {
+        letter-spacing: 0;
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+
+.animat-5 {
+    animation: animat-5 2s 250ms infinite;
+}
+@keyframes animat-5 {
+    from {
+        letter-spacing: -15px;
+        opacity: 0;
+        filter: blur(12px);
+    }
+    to {
+        letter-spacing: 0;
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+.animat-6 {
+    animation: animat-6 2s 250ms infinite forwards;
+}
+@keyframes animat-6 {
+    from {
+        filter: blur(0);
+    }
+    to {
+        filter: blur(17px);
+        opacity: 0;
+    }
+}
+
+
+.animat-7 {
+    animation: animat-7 2s 250ms infinite forwards;
+}
+
+@keyframes animat-7 {
+    from {
+        filter: blur(0);
+        transform: translateY(0);
+    }
+    to {
+        letter-spacing: -15px;
+        filter: blur(17px);
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+}
+
+
+.animat-8 {
+    animation: animat-8 2s 250ms infinite forwards;
+}
+
+@keyframes animat-8 {
+    from {
+        filter: blur(0);
+    }
+    to {
+        letter-spacing: 25px;
+        filter: blur(17px);
+        opacity: 0;
+    }
+}
+
+.animat-17 {
+    animation: animat-17 2s 250ms infinite forwards;
+}
+
+@keyframes animat-17 {
+    from {
+        filter: blur(0);
+    }
+    to {
+        letter-spacing: -15px;
+        filter: blur(17px);
+        opacity: 0;
+    }
+}
+
+
+
+.animat-9 {
+    animation: animat-9 1.5s infinite;
+    background: #e67e22;
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animat-9 {
+    from {
+        transform: rotateX(85deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0);
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+.animat-10 {
+    animation: animat-10 1.5s infinite;
+    background: #e67e22;
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animat-10 {
+    from {
+        transform: rotateY(85deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0);
+        transform-origin: right;
+        opacity: 1;
+    }
+}
+
+.animat-11 {
+    animation: animat-11 1.5s infinite;
+    background: #e67e22;
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animat-11 {
+    from {
+        transform: rotateY(85deg);
+        transform-origin: left;
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0);
+        transform-origin: left;
+        opacity: 1;
+    }
+}
+
+.animat-12 {
+    animation: animat-12 1.5s infinite;
+    background: #e67e22;
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animat-12 {
+    from {
+        transform: rotateX(85deg);
+        transform-origin: bottom;
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0);
+        transform-origin: bottom;
+        opacity: 1;
+    }
+}
+
+.animat-13 {
+    animation: animat-13 1.5s infinite forwards;
+    background: #e67e22;
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animat-13 {
+    from {
+        transform: rotateX(0);
+        transform-origin: top;
+        opacity: 1;
+    }
+    to {
+        transform: rotateX(85deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+}
+
+.animat-14 {
+    animation: animat-14 1.5s infinite forwards;
+    background: #e67e22;
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animat-14 {
+    from {
+        transform: rotateY(0);
+        transform-origin: right;
+        opacity: 1;
+    }
+    to {
+        transform: rotateY(85deg);
+        transform-origin: right;
+        opacity: 0;
+    }
+}
+
+.animat-15 {
+    animation: animat-15 1.5s infinite forwards;
+    background: #e67e22;
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animat-15 {
+    from {
+        transform: rotateX(0);
+        transform-origin: bottom;
+        opacity: 1;
+    }
+    to {
+        transform: rotateX(85deg);
+        transform-origin: bottom;
+        opacity: 0;
+    }
+}
+
+.animat-16 {
+    animation: animat-16 1.5s infinite forwards;
+    background: #e67e22;
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes animat-16 {
+    from {
+        transform: rotateY(0);
+        transform-origin: left;
+        opacity: 1;
+    }
+    to {
+        transform: rotateY(85deg);
+        transform-origin: left;
+        opacity: 0;
+    }
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  .animated-border-box, .animated-border-box-glow{
+    max-height: 200px;
+    max-width: 250px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    /* Border Radius */
+    border-radius: 10px;
+    background: #4d3a3a;
+  }
+  
+  .animated-border-box-glow{
+    overflow: hidden;
+    /* Glow Blur */
+    filter: blur(20px);
+  }
+  
+  .animated-border-box:before, .animated-border-box-glow:before {
+    content: '';
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+    width: 99999px;
+    height: 99999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*border color, change middle color*/
+    background-image: conic-gradient(rgba(0,0,0,0), #ffcc00, rgba(0,0,0,0) 25%);
+    /* change speed here */
+    animation: rotate 4s linear infinite;
+  }
+  
+  .animated-border-box:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+    /* border width */
+      left: 5px;
+      top: 5px;
+    /* double the px from the border width left */
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+    /*bg color*/
+      background: blueviolet;
+    /*box border radius*/
+      border-radius: 7px;
+      background-color: #FFFFFF;
+      background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+      /* background-color: #FFFFFF; */
+      background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+      background-color: #00DBDE;
+      background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  }
+  
+  @keyframes rotate {
+      100% {
+          transform: translate(-50%, -50%) rotate(1turn);
+      }
+  }
+  
+  /*// Border Animation END//*/
+  
+  
+  
+  /*// Ignore This //*/
+  body {
+    margin: 0px;
+  }
+  
+  .center-box{
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #30354600;
+  }
+  .tokemainn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tookeinr {
+    width: 22%;
+}
+
+.tokee h3.animate__zoomInDown.animate__animated {
+    color: white;
+    font-size: 64px;
+    font-family: 'grimoire';
+    margin-bottom: 0;
+}
+
+
+h4 {
+    font-family: 'grimoire';
+    color: white;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+h5 {
+    font-size: 37px;
+    text-transform: uppercase;
+    font-family: 'grimoire';
+    color: cornsilk;
+    margin: 11px 0;
+}
+
+.animated-border-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .tokemainn {
+        flex-direction: column;
+    }
+    
+    .landingsection1 h2 {
+        font-size: 63px !important;
+        text-align: center !important;
+    }
+
+    #loading-bar {
+        width: 85vw !important;
+        height: 12vw !important;
+        /* border: 7px dashed #fff !important; */
+    }
+
+    .enter-button {
+        font-size: 60px !important;
+        margin-top: 40px !important;
+    }
+
+    #landing-page p {
+        font-size: 37px !important;
+    }
+
+    img.App-logo {
+        width: 90%;
+    }
+    
+    .bodzy {
+        animation: unset !important;
+    }
+    
+    .sec1para p {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    
+    .sec1para {
+        width: 100%;
+    }
+    
+    .el {
+        width: 130px !important;
+        height: auto !important;
+    }
+    .le {
+        width: 150px !important;
+        height: auto !important;
+    }
+    
+    .memesgall {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    
+    .memesgall img {
+        margin: 0 !important;
+        width: 100% !important;
+        animation: unset !important;
+        margin: 10px 0 !IMPORTANT;
+    }
+    
+    img.sec3i1 {
+        display: none;
+    }
+    
+    .sec3 h3 {
+        padding: 0;
+        font-size: 39px;
+    }
+    
+    .card1 .bounce {
+        display: none;
+    }
+    
+    .card .bounce {
+        display: none;
+    }
+    .top {
+        font-size: 50px !important;
+        -webkit-text-stroke-width: thin !important;
+    }
+    .bodzy {
+        animation: none !important;
+    }
+
+    header.App-header .container.front {
+        flex-direction: column;
+    }
+    .el, .le {
+        width: 75px !important;
+        height: auto !important;
+    }
+    img.paraimg {
+        width: 100%;
+    }
+    .tokemainn {
+        flex-direction: column;
+    }
+}

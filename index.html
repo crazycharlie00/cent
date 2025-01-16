@@ -1,0 +1,1217 @@
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="logo.png">
+  <meta name="viewport" content="width=1000;user-scalable=0;">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="$">
+  <link href="https://fonts.cdnfonts.com/css/begialo" rel="stylesheet">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="manifest" href="manifest.json">
+  <title>cent</title>
+  <script defer="defer" src="static/js/main.f25c5344.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&amp;family=Gochi+Hand&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/scribbler" rel="stylesheet">
+  <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="static/css/main.1885f84b.css" rel="stylesheet">
+  <link rel="stylesheet" href="arkstyle.css">
+
+  <style>
+    @keyframes shake {
+      0% {
+        transform: translate(0, 0);
+      }
+
+      10% {
+        transform: translate(-1px, 1px) rotate(-1deg);
+      }
+
+      20% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+
+      30% {
+        transform: translate(-2px, 2px) rotate(-2deg);
+      }
+
+      40% {
+        transform: translate(2px, -2px) rotate(2deg);
+      }
+
+      50% {
+        transform: translate(-2px, -1px) rotate(-1deg);
+      }
+
+      60% {
+        transform: translate(2px, 1px) rotate(1deg);
+      }
+
+      70% {
+        transform: translate(-1px, -2px) rotate(-2deg);
+      }
+
+      80% {
+        transform: translate(1px, 2px) rotate(2deg);
+      }
+
+      90% {
+        transform: translate(0, 0);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+    /* .bodzy {
+      animation: shake 3s infinite !important;
+      max-width: 100vw !important;
+    } */
+
+    .bodzycrazy {
+      animation: shake 2s infinite, flash .2s infinite alternate !important;
+      max-width: 100vw !important;
+    }
+  </style>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #landing-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background-image: url(wx-03.png);
+      background-position: center;
+      background-size: cover;
+    }
+
+    #main-content {
+      display: none;
+      padding: 20px;
+    }
+
+    .enter-button {
+      padding: 20px;
+      font-size: 4rem;
+      color: white;
+      background-color: #ff000000;
+      border: none;
+      cursor: pointer;
+      font-family: 'Delicious Handrawn', cursive !important;
+      font-family: 'Scribbler' !important;
+    }
+
+    .enter-button:hover {
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* loading */
+    #loading-bar {
+      width: 54vw;
+      height: 6vw;
+      min-height: 24px;
+      background-color: #ffffff75;
+      border: 0px dashed #fff;
+      border-radius: 5vw;
+      box-shadow: 0 0 2vw rgba(0, 127, 255, 0.25);
+      overflow: hidden;
+    }
+
+    #loading-bar.complete {
+      transition: .8s ease;
+      transform: rotate(-180deg);
+    }
+
+    #loading-bar.complete #progress {
+      transition: .4s ease;
+      width: 0% !important;
+    }
+
+    #progress {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(#25C42F, #25c491);
+      transition: .5s ease;
+      background-color: #00DBDE;
+      background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    }
+
+    h1 {
+      margin-bottom: 2vw;
+      font-family: arial;
+      font-size: 2vw;
+      font-weight: 100;
+      text-align: center;
+      font-family: 'Gochi Hand';
+      font-family: 'Scribbler';
+      -webkit-text-stroke-width: inherit;
+
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        margin: 0
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+      }
+
+      .modal {
+        align-items: center;
+        background-image: url(main.gif);
+        background-size: cover;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000
+      }
+
+      .modal-content {
+        -webkit-text-stroke: 6px #000;
+        border-radius: 20px;
+        cursor: pointer;
+        max-width: 80%;
+        position: relative;
+        text-align: center
+      }
+
+      .text {
+        color: #fff;
+        font-family: Wonder, sans-serif;
+        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+        font-size: 200px;
+        margin: 10px 20px
+      }
+
+      .text: hover {
+        color: #dbdbdb
+      }
+
+      @font-face {
+        font-family: Wonder;
+        src: url(media/wonder.9e6862cf63b1a063d0ff.html)
+      }
+
+      * {
+        box-sizing: border-box
+      }
+
+      : root {
+        --width: 200px;
+        --elheight: 300px;
+        --leheight: 300px;
+        --x-speed: 13s;
+        --y-speed: 7s;
+        --w-speed: 8s;
+        --z-speed: 4s;
+        --transition-speed: 2.2s
+      }
+
+      .bounce {
+        z-index: 3
+      }
+
+      .bounce,
+      .bounce1 {
+        opacity: 100%;
+        position: fixed
+      }
+
+      .bounce1 {
+        z-index: 2
+      }
+
+      .el {
+        height: 300px;
+        height: var(--elheight)
+      }
+
+      .el,
+      .le {
+        border-radius: 15px;
+        width: 200px;
+        width: var(--width)
+      }
+
+      .le {
+        height: 300px;
+        height: var(--leheight)
+      }
+
+      .x {
+        -webkit-animation: x 13s linear infinite alternate;
+        animation: x 13s linear infinite alternate;
+        -webkit-animation: x var(--x-speed) linear infinite alternate;
+        animation: x var(--x-speed) linear infinite alternate
+      }
+
+      .y {
+        -webkit-animation: y 7s linear infinite alternate;
+        animation: y 7s linear infinite alternate;
+        -webkit-animation: y var(--y-speed) linear infinite alternate;
+        animation: y var(--y-speed) linear infinite alternate
+      }
+
+      .w {
+        -webkit-animation: x 8s linear infinite alternate;
+        animation: x 8s linear infinite alternate;
+        -webkit-animation: x var(--w-speed) linear infinite alternate;
+        animation: x var(--w-speed) linear infinite alternate
+      }
+
+      .z {
+        -webkit-animation: y 4s linear infinite alternate;
+        animation: y 4s linear infinite alternate;
+        -webkit-animation: y var(--z-speed) linear infinite alternate;
+        animation: y var(--z-speed) linear infinite alternate
+      }
+
+      .q {
+        -webkit-animation: x 8s linear infinite alternate;
+        animation: x 8s linear infinite alternate;
+        -webkit-animation: x var(--w-speed) linear infinite alternate;
+        animation: x var(--w-speed) linear infinite alternate
+      }
+
+      .qq {
+        -webkit-animation: y 20s linear infinite alternate;
+        animation: y 20s linear infinite alternate;
+        -webkit-animation: y var(--z-speed) linear infinite alternate;
+        animation: y var(--z-speed) linear infinite alternate
+      }
+
+
+
+      @-webkit-keyframes x {
+        to {
+          -webkit-transform: translateX(calc(100vw - 200px));
+          transform: translateX(calc(100vw - 200px));
+          -webkit-transform: translateX(calc(100vw - var(--width)));
+          transform: translateX(calc(100vw - var(--width)))
+        }
+      }
+
+      @keyframes x {
+        to {
+          -webkit-transform: translateX(calc(100vw - 200px));
+          transform: translateX(calc(100vw - 200px));
+          -webkit-transform: translateX(calc(100vw - var(--width)));
+          transform: translateX(calc(100vw - var(--width)))
+        }
+      }
+
+      @-webkit-keyframes y {
+        to {
+          -webkit-transform: translateY(calc(500% - 200px));
+          transform: translateY(calc(500% - 200px));
+          -webkit-transform: translateY(calc(500% - var(--width)));
+          transform: translateY(calc(500% - var(--width)))
+        }
+      }
+
+      @keyframes y {
+        to {
+          -webkit-transform: translateY(calc(500% - 200px));
+          transform: translateY(calc(500% - 200px));
+          -webkit-transform: translateY(calc(500% - var(--width)));
+          transform: translateY(calc(500% - var(--width)))
+        }
+      }
+
+      @keyframes rr {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        25% {
+          transform: translate(50%, -20%);
+        }
+
+        50% {
+          transform: translate(70%, 0);
+        }
+
+        75% {
+          transform: translate(60%, 20%);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      @keyframes qq {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        25% {
+          transform: translate(20%, -20%);
+        }
+
+        50% {
+          transform: translate(40%, 0);
+        }
+
+        75% {
+          transform: translate(20%, 20%);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      @keyframes qq {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        25% {
+          transform: translate(-20%, 20%);
+        }
+
+        50% {
+          transform: translate(0, 40%);
+        }
+
+        75% {
+          transform: translate(20%, -20%);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      .qq {
+        animation: qq 6s infinite alternate;
+        position: absolute;
+      }
+
+      .rr {
+        animation: qq 6s infinite alternate;
+        position: absolute;
+      }
+
+      .App {
+        background-attachment: fixed;
+        background-image: url(toonedollar/todolar-03.html);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 20px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        position: absolute;
+        text-align: center;
+        width: 100%
+      }
+
+      .header {
+        height: 100px;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center
+      }
+
+      .item {
+        margin: 5% 6%
+      }
+
+      h1 {
+        -webkit-text-stroke-width: 4px;
+        font-size: 70px
+      }
+
+      .title,
+      h1 {
+        -webkit-text-stroke-color: #000;
+        color: #fff;
+        font-family: Impact, Haettenschweiler, Arial Narrow Bold, sans-serif;
+        font-weight: 1
+      }
+
+      .title {
+        -webkit-text-stroke-width: 2px;
+        font-size: 35px;
+        padding-bottom: 50px;
+        padding-top: 50px
+      }
+
+      .main,
+      .main2 {
+        color: #fff;
+        font-family: Wonder, sans-serif;
+        font-size: 50px;
+        margin: 50px 100px
+      }
+
+      .top {
+        font-size: 100px;
+        width: 100%
+      }
+
+      .bottom {
+        -webkit-text-stroke-width: 2.5px;
+        -webkit-text-stroke-color: #000
+      }
+
+      .App-logo {
+        border-radius: 20px
+      }
+
+      .front {
+        position: relative;
+        z-index: 10
+      }
+
+      @font-face {
+        font-family: fairy;
+        src: url(media/fairy.875996d6420039788418.html)
+      }
+
+      .fairy {
+        color: #fff;
+        font-family: fairy
+      }
+
+      .about {
+        margin: 75px
+      }
+
+      /*# sourceMappingURL=main.1885f84b.css.map*/
+
+      .landingsection1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 999;
+      }
+
+      .landingsection1 h2 {
+        font-family: 'Gochi Hand', cursive;
+        font-style: italic;
+        color: white;
+        font-size: 69px;
+        font-family: 'Delicious Handrawn', cursive;
+        font-weight: 500;
+        text-align: center;
+        font-family: 'Scribbler';
+      }
+
+      #landing-page: before {
+        background: #0000006b;
+        height: 100%;
+        width: 100%;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+
+      .glowing-image {
+        /* display: none; */
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        /* Initially hide the image */
+        animation: glowing 1s infinite alternate;
+        /* Define the glowing animation */
+        object-fit: cover;
+      }
+
+      .glow {
+        display: none;
+      }
+
+      @keyframes glowing {
+        0% {
+          box-shadow: 0 0 5px #ffcc00;
+          opacity: 1;
+        }
+
+        100% {
+          box-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+          opacity: 0.7;
+        }
+      }
+
+      .sec1para {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .sec1para p {
+        color: white;
+        font-size: 28px;
+        line-height: 45px;
+        font-family: 'Gochi Hand';
+        font-weight: 400;
+        font-family: 'Scribbler';
+      }
+
+      .memesgall {
+        padding: 120px 0;
+      }
+
+      .memesgall img {
+        width: 21%;
+        height: 280px;
+        object-fit: cover;
+        margin: 1% 3%;
+      }
+
+
+      /* card */
+      body .sec3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0;
+      }
+
+      body .sec3 .card {
+        position: relative;
+        min-width: 320px;
+        height: 440px;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+          inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+          5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        margin: 30px;
+        transition: 0.5s;
+      }
+
+      body .sec3 .card:nth-child(1) .box .content a {
+        background: #2196f3;
+      }
+
+      body .sec3 .card:nth-child(2) .box .content a {
+        background: #e91e63;
+      }
+
+      body .sec3 .card:nth-child(3) .box .content a {
+        background: #23c186;
+      }
+
+      body .sec3 .card .box {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background: #2a2b2f;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+
+      body .sec3 .card .box:hover {
+        transform: translateY(-50px);
+      }
+
+      body .sec3 .card .box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      body .sec3 .card .box .content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      body .sec3 .card .box .content h2 {
+        position: absolute;
+        top: -110px;
+        right: 20px;
+        font-size: 8rem;
+        color: rgba(255, 255, 255, 0.1);
+      }
+
+      body .sec3 .card .box .content h3 {
+        font-size: 1.8rem;
+        color: #fff;
+        z-index: 1;
+        transition: 0.5s;
+        margin-bottom: 15px;
+        /* font-family: 'Scribbler'; */
+      }
+
+      body .sec3 .card .box .content p {
+        font-size: 1rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.9);
+        z-index: 1;
+        transition: 0.5s;
+        font-family: 'Gochi Hand';
+        font-family: 'Scribbler';
+      }
+
+      body .sec3 .card .box .content a {
+        position: relative;
+        display: inline-block;
+        padding: 8px 20px;
+        background: black;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        margin-top: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+      }
+
+      body .sec3 .card .box .content a:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        background: #fff;
+        color: #000;
+      }
+
+      .sec3 h3 {
+        color: white;
+        width: 100%;
+        padding: 0 130px;
+        font-size: 50px;
+        font-family: 'Gochi Hand';
+        font-weight: 200;
+        font-family: 'Scribbler';
+      }
+
+      body .sec3 .card .box .content h3 {
+        padding: unset;
+      }
+
+      p.scrollbarr {
+        height: 160px;
+        overflow: auto;
+        font-size: 17px !important;
+        font-family: 'Gochi Hand';
+        font-weight: 100 !important;
+      }
+
+      img.sec1img1 {
+        width: 100%;
+      }
+
+      img.sec3i1 {
+        width: 40%;
+      }
+
+      ;
+      font-family: 'grimoire';
+    }
+
+    h1 span {
+      display: block;
+      margin-bottom: 1vw;
+    }
+
+    p {
+      margin-top: 2vw;
+      font-family: arial;
+      font-size: 2vw;
+    }
+
+    .reference {
+      position: absolute;
+      right: 24px;
+      bottom: 24px;
+      font-family: arial;
+      text-decoration: none;
+    }
+
+    #landing-page p {
+      color: white;
+      font-family: 'Gochi Hand', cursive;
+      padding: 0 !IMPORTANT;
+      margin-top: 7px;
+    }
+  </style>
+  <style type="text/css">
+    @font-face {
+      font-weight: 400;
+      font-style: normal;
+      font-family: circular;
+      src: url('chrome-extension_/liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.html') format('woff2');
+    }
+
+    @font-face {
+      font-weight: 700;
+      font-style: normal;
+      font-family: circular;
+      src: ur l('chrome-extension_/liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.html') format('woff2');
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div id="rooDSt">
+
+    <!-- <div id="landing-page">
+
+      <div class="bounce">
+
+        <div class="el-wrap x">
+          <img class="el y" src="W2-07 2.png">
+        </div>
+      </div>
+      <div class="bounce1">
+        <div class="le-wrap w">
+          <img class="le z" height="auto" src="W-09 2.png">
+        </div>
+      </div>
+      <div class="landingsection1">
+        <h2 class="">Welcome to Alfa
+          Wizard Capital.</h2>
+        <div id="loading-bar">
+          <div id="progress"></div>
+        </div>
+        <p>
+          <span>0</span>
+          / 100
+        </p>
+        <div class="glow">
+          <button class="enter-button">ENTER</button>
+        </div>
+
+      </div>
+
+    </div> -->
+    <div  class=" bodzy App">
+      <div class="uppp">
+
+
+        <div class="bounce">
+          <div class="el-wrap x">
+            <img class="el y" src="bncee.png">
+          </div>
+        </div>
+        <div class="bounce1">
+          <div class="le-wrap w">
+            <img class="le z" height="auto" src="W2-07%202.png">
+          </div>
+        </div>
+
+
+
+
+
+        <body>
+
+          <!-- <audio id="background-audio" autoplay="true" loop="true">
+            <source src="./y2mate_is_Uusi_mene_on_syntynyt_fTUIbZUe7Bs_128k_1695143500.mp3" type="audio/mp3">
+            Your browser does not
+            support the audio element.
+          </audio> -->
+
+          <h1 class="top front"></h1>
+          <div class="container front">
+            <div class="bounce">
+              <div class="el-wrap x rotate">
+                <img class="el y " src="W-07%202.png">
+              </div>
+            </div>
+            <div class="bounce1">
+              <div class="le-wrap w ">
+                <img class="le z rotate" height="auto" src="W-08%202.png">
+              </div>
+            </div>
+            <a class="card">
+              <img src="logo.png" class="App-logo animate__zoomInDown animate__animated " alt="logo" width="500vw"
+                height="400vw">
+            </a>
+            <div class="bounce">
+              <div class="el-wrap x rotate">
+                <img class="el y " src="W-07%202.png">
+              </div>
+            </div>
+            <div class="bounce1">
+              <div class="le-wrap w ">
+                <img class="le z rotate" height="auto" src="W-08%202.png">
+              </div>
+            </div>
+          </div>
+
+          <div class="bounce">
+            <div class="el-wrap x">
+              <img class="el y " src="W-07%202.png">
+            </div>
+          </div>
+          <div class="bounce1">
+            <div class="le-wrap w">
+              <img class="le z" height="auto" src="W-07%202.png">
+            </div>
+          </div>
+
+
+
+
+
+          <!-- <img src="wx-02.png" alt="" class="sec1img1 animate__zoomInDown animate__animated "> -->
+          <div class="sec1para animate__zoomInDown animate__animated">
+            <div class="bounce">
+              <div class="el-wrap x rotate">
+                <img class="el y " src="W-05%202.png">
+              </div>
+            </div>
+            <div class="bounce1">
+              <div class="le-wrap w ">
+                <img class="le z rotate" height="auto" src="W-08%202.png">
+              </div>
+            </div>
+            <h1 class="top front animate__zoomInDown animate__animated " style="font-weight:900;">TO ONE CENT</h1>
+
+            <!-- <img src="book-10.png" loading="lazy" alt="" class="paraimg"> -->
+         
+            <p style="font-weight:900; color: #ff00d4;"><b>CA: on our X profile</b></p>
+          </div>
+         
+        
+        
+          <div class="bounce">
+            <div class="el-wrap x">
+              <img class="el y" src="W-06%202.png">
+            </div>
+          </div>
+          <div class="bounce1">
+            <div class="le-wrap w">
+              <img class="le z" height="auto" src="1%20(3).png">
+            </div>
+          </div>
+
+
+          <div class="bounce">
+            <div class="el-wrap x">
+              <img class="el y" src="W2-04%202.png">
+            </div>
+          </div>
+          <div class="bounce1">
+            <div class="le-wrap w">
+              <img class="le z" height="auto" src="W-05%202.png">
+            </div>
+          </div>
+
+
+          <header class="App-header">
+            <div class="container front">
+              <!-- <div class="item"><a href="#"><img src="/static/media/es.2e6c8d8204e29b1d37c7.png" width="120px"></a>
+              </div> -->
+              <div class="item"><a href="https://t.me/"><img src="static/media/tg.cd0003d8eb55a4c2649d.png" width="120px"></a>
+              </div>
+              <div class="item"><a href="https://x.com/CentToACent"><img src="static/media/twitter.png" width="120px"></a></div>
+              <div class="bounce">
+                <div class="el-wrap x rotate">
+                  <img class="el y " src="W-05%202.png">
+                </div>
+              </div>
+              
+              <div class="bounce1">
+                <div class="le-wrap w ">
+                  <img class="le z rotate" height="auto" src="W-08%202.png">
+                </div>
+              </div>
+              <div class="item"><a href="#"><img src="static/media/dex.png" width="105px"></a></div>
+              
+            </div> <a class="card" style="display: flex; justify-content: center; align-items: center; text-align: center; width: 100%; height: 100%; position: relative;">
+              <img src="mk2.png" style="max-width: 50%; height: auto; display: block;" class="App-logo animate__zoomInDown animate__animated">
+          </a>
+          </header>
+
+          <!-- ddddddddddddddddddddddd -->
+          <!-- <div class="tokee">
+            <h3 class="animate__zoomInDown animate__animated" style="font-weight: 900;     text-shadow:5px 5px 1px rgb(0 251 230);
+            ">Tokenomics</h3>
+            <div class="tokemainn">
+              <div class="tookeinr">
+
+                <div class="center-box">
+                  <div class="animated-border-box-glow"></div>
+                  <div class="animated-border-box">
+                    <h4>69 Billion</h4>
+                    <h5>Supply</h5>
+                  </div>
+                </div>
+
+
+
+
+              </div>
+              <div class="tookeinr">
+
+                <div class="center-box">
+                  <div class="animated-border-box-glow"></div>
+                  <div class="animated-border-box">
+                    <h4>0/0</h4>
+                    <h5>Taxes</h5>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="tookeinr">
+                <div class="center-box">
+                  <div class="animated-border-box-glow"></div>
+                  <div class="animated-border-box">
+                    <h4>Lp</h4>
+                    <h5>burnt</h5>
+                  </div>
+                </div>
+
+              </div>
+              <div class="tookeinr">
+                <div class="center-box">
+                  <div class="animated-border-box-glow"></div>
+                  <div class="animated-border-box">
+                    <h4>CA</h4>
+                    <h5>renounced</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div> -->
+
+          <div class="bounce">
+            <div class="el-wrap x rotate">
+              <img class="el y " src="W-05%202.png">
+            </div>
+          </div>
+          <div class="bounce1">
+            <div class="le-wrap w ">
+              <img class="le z rotate" height="auto" src="W-08%202.png">
+            </div>
+          </div>
+
+          <style>
+            /* Default styles for the video element */
+            video {
+                max-width: 100%; /* Set a maximum width to fit the screen */
+                height: auto; /* Maintain aspect ratio */
+                display: block; /* Prevent any extra spacing around the video */
+            }
+    
+            /* Add CSS for mobile screens with a maximum width of 767px */
+            @media (max-width: 767px) {
+                video {
+                    width: 100%; /* Take up the full screen width on mobile */
+                }
+            }
+        </style>
+
+
+
+
+          <!-- <div style="display: flex; justify-content: center;">
+            <video src="./Move Forward.mp4" controls autoplay loop></video>
+          </div> -->
+
+
+
+       
+          <section>
+            <div class="memesgall">
+              <img src="img/1.png" class="animat-1" loading="lazy" alt="">
+              <img src="img/2.png" class="animat-2" alt="">
+              <img src="img/3.png" class="animat-3" alt="">
+              <img src="img/4.png" class="animat-4" alt="">
+              <img src="img/5.png" class="animat-4" alt="">
+              <img src="img/7.png" class="animat-5" alt="">
+              <img src="img/8.png" class="animat-6" alt="">
+              <img src="img/9.png" class="animat-7" alt="">
+              <img src="img/11.png" class="animat-8" alt="">
+             
+              <img src="img/12.png" class="animat-17" alt="">
+              <img src="img/13.png" class="animat-1" alt="">
+              <img src="img/14.png" class="animat-2" alt="">
+              <img src="img/15.png" class="animat-3" alt="">
+              <img src="img/11.png" class="animat-4" alt="">
+              <img src="img/12.png" class="animat-5" alt="">
+              <img src="img/16.png" class="animat-6" alt="">
+            </div>
+          </section>
+
+
+
+
+          <!-- Code injected by live-server -->
+          <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+              (function () {
+                function refreshCSS() {
+                  var sheets = [].slice.call(document.getElementsByTagName("link"));
+                  var head = document.getElementsByTagName("head")[0];
+                  for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                      var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                      elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                  }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                  if (msg.data == 'reload') window.location.reload();
+                  else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                  console.log('Live reload enabled.');
+                  sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+              })();
+            }
+            else {
+              console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+          </script>
+          <!-- Code injected by live-server -->
+          <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+              (function () {
+                function refreshCSS() {
+                  var sheets = [].slice.call(document.getElementsByTagName("link"));
+                  var head = document.getElementsByTagName("head")[0];
+                  for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                      var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                      elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                  }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                  if (msg.data == 'reload') window.location.reload();
+                  else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                  console.log('Live reload enabled.');
+                  sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+              })();
+            }
+            else {
+              console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+          </script>
+        </body>
+      </div>
+    </div>
+  </div>
+  <!-- <script>
+    document.querySelector('.enter-button').addEventListener('click', function () {
+      document.getElementById('landing-page').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+      document.getElementById('background-audio').play();
+    });
+
+    // loading
+
+    let bar = document.querySelector("#loading-bar");
+    let progress = document.querySelector("#progress");
+    let reporter = document.querySelector("p > span");
+
+    let processingTime = 800;
+    let i = 0;
+    let intervalId;
+
+    function updateLoadingBar() {
+      if (i < 69) {
+        i = i + Math.floor(Math.random() * (25 - 1));
+        progress.style.width = i + "%";
+        processingTime = Math.floor(Math.random() * (3000 - 800));
+        if (i >= 69) {
+          i = 69;
+          reporter.textContent = i;
+          // bar.classList.add('complete');
+          clearInterval(intervalId);
+        }
+        reporter.textContent = i;
+      }
+    }
+
+    intervalId = setInterval(updateLoadingBar, processingTime);
+
+    // star
+
+    // setTimeout(function() {
+    //   const bbb = document.getElementsById("enter");
+    //   bbb.style.display = "block";
+
+    // }, 6600);
+
+    // setTimeout(function() {
+    //   const glowingImage = document.getElementsByClassName("glowing-image");
+    //   glowingImage.style.display = "block";
+
+    // }, 6660);
+
+    setTimeout(function () {
+      const glowingImages = document.querySelectorAll(".glow");
+      glowingImages.forEach(function (image) {
+        image.style.display = "block";
+      });
+    }, 5700);
+
+
+  </script> -->
+  <!-- Code inject
